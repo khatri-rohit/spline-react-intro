@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="text-xl max-w-md">
-                    Frontend Developer who dips is toes in • Animation • Realtime 3D
+                    Frontend Developer who dips is toes in &nbsp;• Animation • Realtime 3D
                     {/* UI Engineer who dips his toes in Realtime 3D • Interaction • Perf */}
                 </div>
                 <div className="text-xs uppercase mt-6">
