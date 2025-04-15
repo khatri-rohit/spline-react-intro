@@ -1,13 +1,104 @@
 @font-face {
-    font-family: heading;
-    src: url(/fonts/fdcd59379b230394-s.p.ttf);
+    font-family: 'heading';
+    src: url(/fonts/07ecdc49cbef95a2-s.p.p.ttf);
 }
 
+:root {
+    --quint-in-out: cubic-bezier(0.83, 0, 0.17, 1);
+    --font-inline: 'heading', 'Space Mono', monospace;
+}
+
+/* General styles */
 body {
-    padding: 2vw 5vw;
+    font-family: 'Space Mono', monospace;
+    width: 100%;
 }
 
-header h1 {
+.time {
     font-family: heading;
-    letter-spacing: .8vw;
+    font-weight: 900;
+}
+
+/* Font for the logo */
+.font-graphic {
+    font-family: var(--font-inline);
+    font-variation-settings: "wdth" calc(var(--f-w, 0) * 450 + 150), "opsz" calc(var(--f-o, .75) * 56 + 4);
+}
+
+/* Animation for the characters */
+@keyframes styles_char__R8sC_ {
+    0% {
+        transform: translateY(50%) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.styles_char__R8sC_ {
+    --t: 0.7;
+    --z: 0.39em;
+    margin-top: 10px;
+    animation: styles_char__R8sC_ calc(var(--t) * 1s) var(--quint-in-out);
+    animation-fill-mode: both;
+    animation-delay: calc(var(--rt) * (var(--t) * .06s));
+    transform-origin: calc(var(--i) * 10% + 25%) 100%;
+    will-change: transform;
+    transition: --f-w .6s var(--quint-in-out), transform .3s var(--quint-in-out);
+    font-weight: 900;
+    padding: 0 0.05em;
+    font-size: 8em;
+    font-stretch: 150%;
+    letter-spacing: -0.1em;
+    transform: scaleX(1.2);
+}
+
+.styles_char__R8sC_:hover {
+    --f-w: 1;
+    transform: translateY(-5%) scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header>div {
+    animation: fadeIn 1s var(--quint-in-out) forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.pm,
+.am {
+    /* opacity: 0; */
+    animation-name: beep1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beep1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    animation: fadeIn 1s var(--quint-in-out) forwards;
 }

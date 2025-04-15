@@ -1,13 +1,15 @@
 import React from 'react'
-import Header from './components/Header'
 import './App.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Cude from './components/Spline/Cube'
 
 const App = () => {
   return (
-    <div className='border h-screen relative'>
+    <div className='overflow-hidden'>
       <Header />
-      <main>
-      </main>
+      <Cude />
+      <Footer />
     </div>
   )
 }
