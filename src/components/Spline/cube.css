@@ -1,0 +1,25 @@
+canvas {
+    margin: 0 auto;
+    height: 80vh !important;
+    /* border: solid 5px pink; */
+    /* background-color: aliceblue; */
+    /* width: 24vw !important; */
+    /* width: fit-content !important; */
+    object-position: center !important;
+    object-fit: cover !important;
+}
+
+@media (max-width:1000px) {
+    canvas {
+        position: absolute;
+        transform: translate(-50%, -45%);
+        top: 50%;
+        left: 50%;
+        /* margin: 0 auto; */
+        /* ma */
+        /* width: 25vw !important; */
+        /* border: solid 5px pink; */
+        object-position: center !important;
+        object-fit: cover !important;
+    }
+}
