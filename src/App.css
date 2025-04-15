@@ -100,5 +100,6 @@ header>div {
 }
 
 footer {
+    background: transparent;
     animation: fadeIn 1s var(--quint-in-out) forwards;
 }

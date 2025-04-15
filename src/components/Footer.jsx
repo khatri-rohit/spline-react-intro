@@ -31,7 +31,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <footer className="flex flex-col md:flex-row justify-between !p-14 md:p-8 absolute bottom-0 w-full">
+        <footer className="flex flex-col md:flex-row justify-between !p-14 !md:p-8 absolute bottom-0 w-full !pb-5">
             <div className="flex flex-col">
                 <div className="text-xs uppercase tracking-wider mb-2">
                     LOCAL TIME (UTC -5:30)
@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-end mt-8 md:mt-0 justify-around !py-7 gap-y-2">
+            <div className="flex flex-col items-end mt-8 md:mt-0 justify-around !py-7 gap-y-2 flex-1">
                 <a href="https://github.com/khatri-rohit" className="mb-4 text-xs uppercase tracking-wider border-dotted border-2 rounded-lg !px-1 border-zinc-700">
                     GitHub
                 </a>
